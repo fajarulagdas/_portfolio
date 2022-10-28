@@ -1,0 +1,694 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: poppins;
+    box-sizing: border-box;
+}
+
+/* navbar */
+#navbar{
+    position: fixed;
+    width: 100vw;
+    background: linear-gradient(90deg, rgba(229,230,228,1) 0%, rgba(236,236,235,1) 13%, rgba(242,243,242,1) 52%, rgba(229,230,228,1) 98%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-items: center;
+    padding: 1vw 4vw;
+    z-index: 1000;
+}
+
+#navbar .navLeft{
+    order: 1;
+    flex: 1;
+}
+
+#navbar .navLeft a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+#navbar .navLeft i{
+    font-size: 56px;
+    color: #424242;
+    padding: 0 12px;
+}
+
+#navbar .logoText{
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar .navLeft p{
+    font-size: 24px;
+    font-weight: 500;
+    color: #424242;;
+}
+
+#navbar .logoTagline{
+    font-size: 16px !important; 
+    font-weight: 400 !important;
+}
+
+#navbar .navRight{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    order: 3;
+    flex: 1;
+}
+
+#navbar .navRight a{
+    text-decoration: none;
+    margin-left: 12px;
+}
+
+#navbar .navRight i{
+    font-size: 32px;
+    color: #424242;;
+    padding: 8px;
+}
+
+/* Hamburger Menu*/
+#navbar .menuBar{
+    padding: 8px;
+    cursor: pointer;
+    margin-left: 12px;
+    display: none;
+}
+
+#navbar .menuBar .bar{
+    width: 32px;
+    height: 4px;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    margin-right: 0;
+    margin-left: auto;
+    border-radius: 10px;
+    background-color: #424242;
+    transition: all 0.5s;
+}
+
+.mode{ /* Hamburger Menu state change*/
+    transition: all 0.2s !important;
+}
+
+.mode .bar2{
+    width: 18px !important;
+}
+
+.mode .bar3{
+    width: 12px !important;
+}
+
+/* Menu List */
+#navbar .navItems{
+    width: 300px;
+    text-align: right;
+    order: 2;
+    flex: 2;
+}
+
+#navbar .navItems ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    transition: all 2s;
+}
+
+#navbar .navItems .navItem .navLink{
+    font-size: 16px;
+    text-decoration: none;
+    color: #323232;
+    padding: 4px;
+    transition: all 100ms ease-in-out 100ms ;
+}
+
+#navbar .navItems .navItem .navLink:hover{
+    text-shadow: 2px 2px 8px #969696;
+    color: #fff;
+} /* navbar end */
+
+
+/* banner section */
+#banner{
+    background-image: url("../images/banner_bg.svg");
+    width: 100%;
+    height: 50vw;
+    padding-top: 4vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 30;
+}
+
+#banner .bannerLeft{
+    flex-basis: 40%;
+    margin: auto;
+    order: 1;
+}
+
+#banner .bannerRight{
+    flex-basis: 40%;
+    margin: auto;
+    order: 2;
+}
+
+#banner .bannerText .bannerHead{
+    font-size: 56px;
+    font-weight: 600;
+    color: #424242;
+}
+
+#banner .bannerText .bannerHead .bannerHeadLight{
+    font-weight: 300;
+}
+
+#banner .bannerText .bannerParagraph{
+    font-size: 16px;
+    font-weight: 300;
+    padding-top: 1vw;
+    padding-bottom: 2vw;
+}
+
+#banner .bannerForm .bannerFormBox{
+    display: block;
+    flex: 3;
+    padding: 12px 0 12px;
+    border-width: 1px;
+    border-radius: 40px 0 0 40px;
+    border: 1px solid #424242;
+    border-right: none;
+}
+
+#banner .bannerForm .bannerFormBtn{
+    display: block;
+    flex: 1;
+    color: #fff;
+    background: linear-gradient(180deg, rgba(52,190,237,1) 0%, rgba(18,157,205,1) 92%);
+    border: 1px solid #424242;
+    border-left: none;
+    border-radius: 0 40px 40px 0;
+}
+
+#banner .bannerForm input::placeholder {
+    padding-left: 2vw;
+    font-size: 16px;
+  }
+
+
+#banner .bannerForm{
+    width: 100%;
+    display:flex;
+    padding-bottom: 2vw;
+}
+
+#banner .bannerRight .bannerImage{
+    width: 100%;
+    height: auto;
+} /* Banner end */
+
+/* Section Headings */
+.head{
+    font-size: 64px;
+    font-weight: 600;
+    color: #424242;
+    text-align: center;
+    padding: 2vw 0 2vw;
+
+}
+
+.headLight{
+    font-weight: 300;
+}
+
+#ipadSection{
+    width: 90%;
+    display: grid;
+    grid-template-rows: 1fr 24px 1fr 24px 1fr;
+    grid-template-columns: 3fr 1fr 3fr;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1vw 0 1vw;
+}
+
+#ipadSection .ipadArea{
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/6;
+}
+
+#ipadSection .ipadArea .ipad{
+    width: 100%;
+    height: auto;
+    position: relative;
+    z-index: 40;
+}
+
+#ipadSection .ipadArea .ipadGIF{
+    position: absolute;
+    width: 82%;
+    z-index: 39;
+    left: 10%;
+    top:6%;
+}
+
+#ipadSection .ipadNum1, #ipadSection .ipadNum2, #ipadSection .ipadNum3{
+    font-size: 40px;
+    font-weight: 300;
+}
+
+#ipadSection .ipadNum1{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#ipadSection .ipadRow1{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#ipadSection .ipadNum2{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#ipadSection .ipadRow2{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+
+#ipadSection .ipadNum3{
+    grid-column: 2/3;
+    grid-row: 5/6;
+}
+
+#ipadSection .ipadRow3{
+    display: none;
+}
+
+#ipadSection .ipadDetail1{
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#ipadSection .ipadRowDotted1{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#ipadSection .ipadDetail2{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+
+#ipadSection .ipadRowDotted2{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+#ipadSection .ipadDetail3{
+    grid-column: 3/4;
+    grid-row: 5/6;
+}
+
+
+/* Media Queries for responsive */
+
+/* larger screens */
+@media screen and (min-width: 1200px){
+
+}/* >= 1200px */
+
+/* large screens */
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+    /* navbar */
+    #navbar .navLeft i{  /*Apple icon*/
+        font-size: 48px;
+    }
+    
+    #navbar .navLeft p{
+        font-size: 20px;
+    }
+
+    #navbar .logoTagline{
+        font-size: 14px !important;
+    }
+
+    #banner .bannerText .bannerHead{
+        font-size: 40px;
+    }
+}/* 992px - 1199px */
+
+/* laptop screens */
+@media screen and (min-width: 768px) and (max-width: 991px){
+    
+    /* navbar */
+    #navbar .navLeft i{ /*Apple icon*/
+        font-size: 40px; 
+    }
+
+    #navbar .navLeft p{
+        font-size: 16px;
+    }
+
+    #navbar .logoTagline{
+        font-size: 12px !important; 
+    }
+
+    #banner{
+        padding-top: 8vw;
+    }
+    #banner .bannerText .bannerHead{
+        font-size: 32px;
+    }
+}/* 768px - 991px */
+
+/* tab screens */
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+    /* navbar */
+    #navbar .navLeft i{ /*Apple icon*/
+        font-size: 36px; 
+    }
+
+    #navbar .navLeft p{
+        font-size: 16px;
+    }
+
+    #navbar .logoTagline{
+        font-size: 12px !important; 
+    }
+
+    #navbar .navRight i{
+        font-size: 28px;
+        padding: 8px;
+    }
+
+    /* hamburger menu */
+    #navbar .menuBar .bar{
+        width: 28px;
+        height: 4px;
+        margin: 5px 0;
+    }
+
+    #banner .bannerText .bannerHead{
+        font-size: 44px;
+    }
+
+    /* ipad section grid adjustments */
+    #ipadSection{
+        grid-template-columns: 1fr 1fr 2fr!important;
+        grid-template-rows: 3fr 1fr 24px 1fr 24px 1fr !important;
+        
+    }
+
+    #ipadSection .ipadArea{
+        position: relative;
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+
+    #ipadSection .ipadNum1{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    
+    #ipadSection .ipadRow1{
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+    
+    #ipadSection .ipadNum2{
+        grid-column: 2/4;
+        grid-row: 4/5;
+    }
+    
+    #ipadSection .ipadRow2{
+        grid-column: 2/4;
+        grid-row: 5/6;
+    }
+    
+    #ipadSection .ipadNum3{
+        grid-column: 2/3;
+        grid-row: 6/7;
+    }
+    
+    #ipadSection .ipadDetail1{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    
+    #ipadSection .ipadRowDotted1{
+        grid-column: 4/5;
+        grid-row: 2/3;
+    }
+    
+    #ipadSection .ipadDetail2{
+        grid-column: 4/5;
+        grid-row: 3/4;
+    }
+    
+    #ipadSection .ipadRowDotted2{
+        grid-column: 4/5;
+        grid-row: 5/6;
+    }
+    
+    #ipadSection .ipadDetail3{
+        grid-column: 4/5;
+        grid-row: 6/7;
+    }
+}/* 480px - 767px */
+
+/* mobile screens */
+@media screen and (min-width: 320px) and (max-width: 479px){
+    #navbar .navLeft i{ /*Apple icon*/
+        font-size: 32px; 
+    }
+
+    #navbar .navLeft p{
+        font-size: 16px;
+    }
+
+    #navbar .logoTagline{
+        font-size: 8px !important; 
+    }
+
+    #navbar .navRight i{
+        font-size: 20px;
+        padding: 4px;
+    }
+
+    /* hamburger menu */
+    #navbar .menuBar .bar{
+        width: 24px;
+        height: 3px;
+        margin: 4px auto;
+    }
+
+    #banner{
+        padding-top: 15vw !important;
+    }
+
+    #banner .bannerText .bannerHead{
+        font-size: 28px;
+    }
+}/* 320px - 479px */
+
+@media screen and (max-width: 320px){
+
+    #navbar .navLeft i{ /*Apple icon*/
+        font-size: 20px; 
+    }
+
+    #navbar .navLeft p{
+        font-size: 10px;
+    }
+
+    #navbar .logoTagline{
+        font-size: 8px !important; 
+    }
+
+    #navbar .navRight i{
+        font-size: 16px;
+        padding: 4px;
+    }
+
+    /* hamburger menu */
+    #navbar .menuBar .bar{
+        width: 16px;
+        height: 2px;
+        margin: 3px auto;
+    }
+
+    #banner{
+        padding-top: 8vh !important;
+    }
+
+    #banner .bannerText .bannerHead{
+        font-size: 24px;
+    }
+}/* <=320px */
+
+/* Custom media Queries */
+
+@media screen and (max-width: 992px){
+
+    /* Hamburger Menu*/
+    #navbar .menuBar{
+        display: block;
+    }
+
+    #navbar .navLeft{
+        order: 1;
+    }
+
+    #navbar .navRight{
+        order: 2;
+    }
+    #navbar .navItems ul{
+        display: none;
+        flex-direction: column;
+        margin-top: 2vw;
+        padding-bottom: 4vw;
+    }
+
+
+    #navbar .navItems{ 
+        order: 3;
+        flex-basis: 100%;
+    }
+
+    #navbar .navItems .navItem{
+        text-align: center;
+        padding: 24px;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    #banner .bannerText .bannerParagraph{
+        font-size: 14px;
+    }
+
+    #banner .bannerForm .bannerFormBox{
+        padding: 5px 0 5px !important;
+    }
+
+    #banner .bannerForm input::placeholder {
+        font-size: 12px;
+    }
+}/* <=992px */
+
+@media screen and (max-width: 768px){
+    #banner{
+        width: auto;
+        height: auto;
+        background-size: 200vw;
+        background-position: top;
+        flex-direction: column-reverse;
+        justify-content: center;
+        padding: 10vw 0 10vw;
+        align-items: center;
+    }
+    #banner .bannerRight{
+        width: 80%;
+        height: auto;
+    }
+
+
+    #banner .bannerLeft{
+        width: 80%;
+        height: auto;
+    }
+
+    #banner .bannerText{
+        text-align: center;
+        padding: 2vw 0 2vw;
+    }
+
+    #section1 h3{
+        position: relative;
+        z-index: 1000;
+    }
+
+
+} /* <=768 */
+
+@media screen and (max-width: 480px){
+/* ipad section grid adjustments */
+    #ipadSection{
+        grid-template-columns: 2fr 1fr 1fr 2fr!important;
+        grid-template-rows: 2fr 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr 24px 1fr !important;
+        
+    }
+
+    #ipadSection .ipadArea{
+        grid-column: 1/5;
+        grid-row: 1/2;
+    }
+
+    #ipadSection .ipadNum1{
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+
+    #ipadSection .ipadRow1{
+        grid-column: 2/4;
+        grid-row: 3/4;
+    }
+
+    #ipadSection .ipadDetail1{
+        grid-column: 1/5;
+        grid-row: 4/5;
+    }
+
+    #ipadSection .ipadRowDotted1{
+        grid-column: 1/5;
+        grid-row: 5/6;
+    }
+
+    #ipadSection .ipadNum2{
+        grid-column: 2/4;
+        grid-row: 6/7;
+    }
+
+    #ipadSection .ipadRow2{
+        grid-column: 2/4;
+        grid-row: 7/8;
+    }
+
+    #ipadSection .ipadDetail2{
+        grid-column: 1/5;
+        grid-row: 8/9;
+    }
+
+    #ipadSection .ipadRowDotted2{
+        grid-column: 1/5;
+        grid-row: 9/10;
+    }
+
+    #ipadSection .ipadNum3{
+        grid-column: 2/4;
+        grid-row: 10/11;
+    }
+
+    #ipadSection .ipadRow3{
+        display: block;
+        grid-column: 2/4;
+        grid-row: 11/12;
+    }
+
+    #ipadSection .ipadDetail3{
+        grid-column: 1/5;
+        grid-row: 12/13;
+    }
+
+}/*  <=480*/
+

@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&family=Yellowtail&display=swap');
+
+/*
+font-family: 'Mochiy Pop P One', sans-serif;
+font-family: 'Yellowtail', cursive;
+*/
+
+.logo{
+    font-family: 'Yellowtail', cursive;
+    cursor: pointer;
+}
+
+.fontColor{
+    color: #22baab;
+}
+.fontColor:hover{
+    color: #2ee1cf;
+}
+
+#navTop{
+    background-color: #fff;
+    
+}
+#mainNav{
+   background-color: #22baab;
+   box-shadow: 5px 2px 5px 0 rgba(0, 0, 0, 0.2);
+   
+}
+
+.cartPrice{
+    user-select: none;
+    cursor: pointer;
+}
+
+#mainNav .navbar-nav a, #mainNav .nav-item {
+    color:#fff;
+    border-radius: 4px;
+    transition: all 150ms 50ms ease-in-out;
+}
+
+#mainNav .navbar-nav .nav-link:hover{
+    background-color: #fff;
+    color: #22baab;
+    
+}
+
+.searchButton:hover{
+    background-color: #22baab !important;
+    color: #fff;
+}
+
+#navWrapper{
+    position: sticky;
+    top: 0;
+    z-index: 3;
+}
+
+#navRes{
+    display: none;
+}
+
+#sideNav{
+    display: none;
+}
+
+#bannerSection{
+    background-color: #3dc4b6;
+}
+
+#bannerSection .carousel-indicators [data-bs-target]{
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+   margin: auto 8px;
+}
+
+.bannerButton{
+    transition: all 50ms 50ms ease-in-out;
+}
+
+.bannerButton:hover{
+    background-color:rgba(255, 255, 255, 0.2);
+}
+
+.btnSlide{
+    padding: 10px 20px;
+    background-color: #3bc395;
+}
+
+.btnSlide:hover{
+    background-color: #16dd9a;
+}
+
+#itemSliderCarousel{
+    display: block;
+    z-index: 0;
+}
+
+.itemSlideName{
+    transition: 100ms ;
+}
+.itemSlideName:hover{
+    color: rgb(37, 37, 37) !important;
+}
+
+#itemSliderCarousel .owl-carousel .owl-nav button.owl-next, #itemSliderCarousel .owl-carousel .owl-nav button.owl-prev{
+    font-size: 40px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#itemSliderCarousel .owl-carousel .owl-nav button.owl-next:hover, #itemSliderCarousel .owl-carousel .owl-nav button.owl-prev:hover{
+    background-color: rgba(235, 235, 235,0.5);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+#itemSliderCarousel .owl-carousel .owl-nav button.owl-next{
+    position: absolute;
+    bottom: 50%;
+    right: 0;
+}
+
+#itemSliderCarousel .owl-carousel .owl-nav button.owl-prev{
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+}
+
+#productHead{
+    background-color:#22baab ;
+}
+
+#productList .productCard{
+    border-bottom-width: thick;
+    border-bottom-color: #3bc395;
+    transition: box-shadow 150ms 50ms ease-in-out;
+    /* margin: 1vh 1vh; */
+}
+
+#productList .productCard:hover{
+    box-shadow: 5px 5px 5px 2px rgba(0, 0, 0, 0.1);
+}
+
+#footNav{
+    background-color:#22baab ;
+}
+
+#footCopyright{
+    background-color:#2ea89b ;
+}
+
+@media only screen and  (max-width:991px) {
+
+    #navTop, #mainNav{
+        display: none;
+    }
+
+    #navRes{
+        display: block;
+        position: sticky;
+        top: 0;
+        background-color: #fff;
+        z-index: 2;
+    }
+    
+    #sideNav{
+        display: none;
+        position: fixed;
+        width: 100vw;
+        height: 90vh;
+        background-color: rgb(235, 235, 235);
+        overflow: hidden;
+        box-shadow: 5px 10px 5px 0 rgba(0, 0, 0, 0.2);
+        z-index: 3;
+    }
+
+    .carousel-control-next, .carousel-control-prev{
+        z-index: 0 !important;
+    }
+    /* #bannerSection{
+        z-index:-1;
+    } */
+    #sideNav .sideNavLink{
+        margin-left: 6vw;
+        
+    }
+
+    #sideNav .sideNavLink a{
+        display: block;
+        font-size: 16px;
+        color: #000;
+        padding: 16px 16px;
+        margin-top: 8px;
+        
+    }
+
+    #sideNav .sideNavLink a:hover{
+        background-color: #107c71;
+        padding-left: 25px;
+        font-weight: 500;
+        color: white;
+        border-radius:8px ;
+    }
+
+    #sideNav .sideNavLink #sideNavClose a{
+        padding: 8px 16px !important; 
+    }
+
+    #sideNavClose a:hover{
+        background-color: none !important;
+        color: #fff;
+    }
+
+    #sideNav hr{
+        margin-top: 4px;
+        margin-bottom: 4px;
+    }
+
+    .hamBurger {
+        display: inline-block;
+        cursor: pointer;
+      }
+
+    .logoRes{
+        font-family: 'Yellowtail', cursive;
+        display: inline-block;
+        cursor: pointer;
+        font-size: 36px;
+    }
+
+    .bar1, .bar2, .bar3 {
+        width: 36px;
+        height: 4.5px;
+        border-radius: 16px;
+        background-color: #0c988a;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+    .bar3{
+        margin-left: auto;
+        margin-right: 0;
+    }
+    
+    .change{
+        transition: 0.4s;
+    }
+
+    .change .bar1 {
+        width: 16px;
+      }
+      
+    .change .bar3 {
+        width: 16px;
+        
+      }
+
+    .bannerContent{
+        text-align: center;
+        padding: 60px 16px;
+    }
+    #bannerSection .carousel-indicators [data-bs-target]{
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        margin: auto 8px;
+     }
+    .itemSlideContent{
+        text-align: center;
+     }
+    .itemSlideContent h3, button{
+        padding: 16px 16px;
+     }
+    #itemSliderCarousel{
+        z-index: -1;
+    }
+    
+}

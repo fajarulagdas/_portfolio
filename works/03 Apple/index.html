@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apple Website</title>
+    <script src="https://kit.fontawesome.com/7540eb124d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <!--Top Section including navbar and Banner-->
+    <section id="navbar">
+        <div class="navLeft">
+            <a href="#">
+                    <i class="fa-brands fa-apple"></i>
+                    <div class="logoText">
+                        <p>Apple</p>
+                        <p class="logoTagline">Tablets & Laptops</span></p>
+                    </div>
+            </a>
+        </div>
+
+        <div class="navRight">
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <div class="menuBar" onclick="navMenu()"> <!--Hamburger icon-->
+               <div class="bar bar1"></div>
+               <div class="bar bar2"></div>
+               <div class="bar bar3"></div>
+            </div>
+        </div>
+
+        <!-- Nav Items -->
+        <div class="navItems">
+            <ul>
+                <li class="navItem"><a href="#" class="navLink">Store</a></li>
+                <li class="navItem"><a href="#" class="navLink">IMac</a></li>
+                <li class="navItem"><a href="#" class="navLink">Ipad</a></li>
+                <li class="navItem"><a href="#" class="navLink">TV & Home</a></li>
+                <li class="navItem"><a href="#" class="navLink">Accessories</a></li>
+                <li class="navItem"><a href="#" class="navLink">Support</a></li>
+            </ul>
+        </div>
+    </section>
+
+
+    
+
+    <section id="banner">
+        <div class="bannerLeft">
+            <div class="bannerText">
+                <h3 class="bannerHead"><span class="bannerHeadLight">Futuristic</span> Display</h3>
+                <p class="bannerParagraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.</p>
+            </div>
+
+            <div class="bannerForm">
+                <!-- <div class="bannerForm"><input type="text"></div>
+                <div class="bannerButton"></div> -->
+                <input type="text" class="bannerFormBox" name="email" placeholder="Enter Your eMail">
+                <button class="bannerFormBtn" type="button">Submit</button>
+            </div>
+        </div>
+
+        <div class="bannerRight">
+            <img class="bannerImage" src="./images/floating-tab.png">
+        </div>
+    </section>
+
+    <!-- Tablet(Ipad) with Details Section -->
+    <h3 class="head"><span class="headLight">Powerful</span> Design!</h3>
+    <section id="ipadSection">
+        <div class="ipadArea">
+            <img class="ipad" src="./images/ipad.png">
+            <img class="ipadGIF" src="./images/ipad theme.gif">
+        </div>
+
+        <div class="ipadNum1"><p>01</p></div>
+        <hr class="ipadRow1">
+        <div class="ipadDetail1">
+            <h4 class="ipadHead">We use high standards</h4>
+            <p class="ipadText">Consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+        </div>
+        <hr class="ipadRowDotted1">
+        
+        <div class="ipadNum2">02</div>
+        <hr class="ipadRow2">
+        <div class="ipadDetail2">
+            <h4 class="ipadHead">We use high standards</h4>
+            <p class="ipadText">Eu nisl nunc mi ipsum faucibus vitae aliquet. Felis eget velit aliquet.</p>
+        </div>
+        <hr class="ipadRowDotted2">
+        
+        <div class="ipadNum3">03</div>
+        <hr class="ipadRow3">
+        <div class="ipadDetail3">
+            <h4 class="ipadHead">We use high standards</h4>
+            <p class="ipadText">Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper.</p>
+        </div>
+        
+
+    </section>
+
+   <script src="./js/index.js"></script> 
+</body>
+</html>

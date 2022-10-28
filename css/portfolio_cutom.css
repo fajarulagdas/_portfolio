@@ -1,0 +1,890 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300&display=swap');
+/* font-family: 'Montserrat', sans-serif;
+font-family: 'Poppins', sans-serif;
+
+#fff7f1 - bgColor
+
+colors
+    
+    #f6a460 -- orange
+    #f49d9f -- light pink
+    #e75842 -- dark pink
+    #44c4b3 -- cyan
+    #fff7f1 -- nuetral pink
+
+    #6f61e4 -- violet
+    #55214a -- purple
+
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 18px;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* container */
+.container{
+    width : 90vw !important;
+    height: auto;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+
+/* Navbar */
+#navSection{
+    width: 100vw;
+    height: 10vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 0.5rem 0.5rem rgba( 0, 0, 0, 0.1);
+    z-index: 999;
+}
+
+#navSection #navWrapper{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navWrapper .logo{
+    width: 10%;
+}
+
+#navWrapper .logo .logoIcon{
+    width: 3.5rem;
+    height:auto;
+    /* padding-left: 2vw; */
+}
+
+#navWrapper .navbar ul{
+    display: flex;
+    width: 50vw;
+    justify-content: space-around;
+    list-style: none;
+}
+
+#navWrapper .navbar ul .navItem .navLink{
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+    text-decoration: none;
+    padding: 0.5rem;
+    font-weight: 400;
+    color: black;
+    font-size: 1rem;
+}
+
+#navWrapper .navbar ul .navItem .active{
+    font-weight: 500;
+    color: #e75842;
+}
+
+#navWrapper .navbar ul .navItem .active::after{
+    content: "";
+    width: 25%;
+    height: 0.1rem;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.2rem;
+    border-bottom: 0.2rem solid  #ea7564;
+
+}
+
+#navWrapper .navbar ul .navItem .navLink:not(.active)::after{
+    content: "";
+    width: 5%;
+    height: 0.1rem;
+    position: absolute;
+    left: 0.5rem;
+    bottom: 0.2rem;
+    opacity: 0;
+    border-bottom: 0.15rem solid  #ea7564;
+    transition: all 500ms;
+}
+
+#navWrapper .navbar ul .navItem .navLink:not(.active):hover::after{
+    width: 25%;
+    opacity: 1;
+}
+
+
+#navWrapper .socialMedia .socialMediaLinks{
+    font-size: 2.5rem;
+    padding-left: 1rem;
+}
+
+#navWrapper .socialMediaLinks{
+    color: #55214a;
+}
+
+#navWrapper .socialMediaLinks:first-child{
+    color: #e75842;
+}
+
+#navWrapper .socialMediaLinks:last-child{
+    color: #44c4b3;
+}
+/*---- Navbar End */
+
+
+/* About Section */
+#aboutSection{
+    background-color: #fff7f1 ;
+}
+
+#aboutSection #aboutWrapper{
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    height: 100vh;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#aboutWrapper .aboutContent{
+    width: 50%;
+    padding-top: 8vh;
+    order: 1;
+}
+
+#aboutWrapper .aboutContent .aboutHead{
+    font-family: 'Montserrat', sans-serif;
+    color: #e75842;
+    font-weight: 600;
+    font-size: 2.5rem;
+}
+
+#aboutWrapper .aboutContent .aboutTag{
+    font-family: 'Montserrat', sans-serif;
+    color:#55214a;
+    padding-bottom: 1.5rem;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+#aboutWrapper .aboutContent .aboutMe{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    line-height: 1.5;
+    font-size: 1rem;
+    text-align: justify;
+}
+
+#aboutWrapper .aboutContent .aboutMe .aboutBig{
+    font-size : 1.5rem;
+}
+
+#aboutWrapper .aboutContent .aboutMe .aboutBold{
+    font-weight: 400;
+}
+
+#aboutWrapper .aboutContent .aboutBtn{
+    font-family: 'Montserrat', sans-serif;
+    padding: 1rem 2.5rem;
+    margin-top: 2rem;
+    font-weight: 600;
+    border-radius: 0.5rem;
+    border: none;
+    color: #fff;
+    background-color: #44c4b3;
+    font-size: 1.5rem;
+}
+
+#aboutWrapper .aboutPic{
+    order: 2;
+    width: 45%;
+}
+
+#aboutWrapper .aboutPic img{
+    width: 100%;
+    padding-top: 8vh ;
+}
+/* About Section End */
+
+/* Section  Headings */
+.sectionHead{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.sectionHead h2{
+    position: relative;
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 10vh;
+    padding-bottom: 2rem;
+    font-weight: 600;
+    color: #e75842;
+}
+
+.sectionHead h2::after{
+    content: "";
+    width: 40%;
+    height: 0.1rem;
+    position: absolute;
+    right: 0;
+    bottom: 10%;
+    border-bottom: 0.3rem solid  #3a3b3c;
+}
+
+/* Skills Section */
+#skillSection{
+    padding-top: 1.5rem;
+    padding-bottom: 4rem;
+    height: auto;
+}
+
+#skillSection #skillWrapper{
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+#skillWrapper .skillMain{
+    width: 40%;
+    padding-bottom: 10vh;
+}
+
+#skillWrapper .skillMain .skillHead{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    text-align: center;
+    color: #3a3b3c;
+}
+
+#skillWrapper .skillMain .skill .skillName h3{
+    font-family: 'Poppins', sans-serif;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #3a3b3c;
+}
+
+.hardSkillIcon{
+    color: #e75842;
+}
+
+.toolBoxIcon{
+    color: #44c4b3;
+}
+
+.skill{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.skillName{
+    width:50%
+}
+
+.skillBar{
+    width: 40%;
+    display: flex;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.skillBar .progressBar{
+    position: relative;
+    width: 100%;
+    height: 0.5rem;
+    background-color:#e75842;
+    border-radius: 0.2rem;
+    z-index: 24;
+}
+
+.skillMain:last-child .skillBar .progressBar{
+    background-color:#44c4b3;
+}
+
+.skillBar .blankBar{
+    height: 0.5rem;
+    background-color:#f6F6F6;
+    border-radius: 0.2rem;
+}
+
+
+/* Skill bar progress length of each skill 80%*/
+.html, .bootstrap, .graphics, .uiux, .visualstudio, .photoshop, .figma, .illustrator{
+    width: 80% !important;
+}
+
+/* blank space of each skill 20%*/
+.html + .blankBar, .bootstrap + .blankBar, .graphics + .blankBar, .uiux + .blankBar, .visualstudio + .blankBar, .photoshop + .blankBar, .figma + .blankBar, .illustrator + .blankBar{
+    width: 20% !important;
+}
+
+/* Skill bar progress length of each skill 50%*/
+.jquery, .indesign, .animatecc, .premierepro{
+    width: 50% !important;
+}
+
+/* blank space of each skill 50%*/
+.jquery + .blankBar, .indesign + .blankBar, .animatecc + .blankBar, .premierepro + .blankBar{
+    width: 50% !important;
+}
+
+/* Skill bar progress length of each skill 25%*/
+.javascript, .wordpress{
+    width: 25% !important;
+}
+
+/* blank space of each skill 75%*/
+.javascript + .blankBar, .wordpress +.blankBar{
+    width: 75% !important;
+}
+/* ---- */
+
+/* Education Section */
+#eduSection{
+    background-color: #fff7f1 ;
+    padding-top: 3vh;
+    padding-bottom: 8vh;
+    margin-top: 20vh;
+}
+
+#eduSection .sectionHead h2{
+    padding-top: 8vh;
+}
+
+#eduSection #eduWrapper{
+    display: grid;
+    grid-template-columns: 3fr 2fr 1fr;
+    align-items: center;
+    /* justify-content: center; */
+    column-gap: 1rem;
+    row-gap: 3rem;
+    padding-top: 4rem;
+}
+
+#eduSection #eduWrapper .eduHead h3{
+    font-family: 'Montserrat', sans-serif;
+    color: #3a3b3c;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 0.5rem;
+}
+
+#eduSection #eduWrapper .eduRow{
+    border: none;
+    border-bottom: 0.2rem solid #44c4b3;
+    padding-top: 1rem;
+    grid-column: 1/span 3;
+}
+
+#eduSection #eduWrapper p{
+    font-family: 'Poppins', sans-serif;
+    color: #2a2b2c;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 0.5rem;
+}
+
+/* Works Section */
+
+#workSection{
+    padding-top: 2vh;
+}
+
+#workSection #workWrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+}
+
+.workTitle h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 1rem;
+    color: #fff;
+}
+
+.workTitle:first-child{
+    grid-column: 1/4;
+    text-align: center;
+}
+
+/* web dev works */
+#workSection #workWeb{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 8fr;
+    grid-column: 1/4;
+    gap: 3rem;
+    padding: 2rem;
+    border-radius: 2rem ;
+    background-color: #ea7564;
+}
+
+#workSection #workGraphics{
+    display: grid;
+    grid-template-rows: 1fr 8fr;
+    gap: 2rem;
+    grid-column: 1/2;
+    padding: 2rem 1rem 2rem 1rem;
+    place-items: center center;
+    border-radius: 2rem ;
+    background-color:  #f49d9f;
+}
+
+#workSection #workGraphics .workCard{
+    grid-row: 2/3;
+    grid-column: 1/4;
+}
+
+#workGraphics .workTitle{
+    grid-column: 1/4;
+}
+
+.workTitle:nth-child(3){
+    grid-row: 3/4;
+    grid-column: 2/4;
+    text-align: center;
+}
+
+#workSection #workUi{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 8fr;
+    gap: 2rem;
+    grid-column: 2/4;
+    padding: 2rem 0 2rem 2rem;
+    background-color: #44c4b3;
+    border-radius: 2rem ;
+}
+
+.workCard{
+    width: 100%;
+    position: relative;
+    margin: auto;
+    border-radius: 1rem;
+    overflow: hidden;
+    position: relative;
+    bottom: 2rem;
+}
+
+.workCard a{
+    text-decoration: none;
+    color: #3a3b3c;
+}
+
+.workCard .workInfo{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    border: 0.1rem solid #5a5b5c;
+    border-radius: 1rem;
+}
+
+.workCard h3{
+   font-family: 'Montserrat', sans-serif;
+   font-size: 1.5rem;
+   font-weight: 600;
+   text-align: center;
+   padding: 1rem;
+}
+
+.workCard .workTag p{
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+}
+
+.workCard .workTag{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 1rem 1rem 1rem;
+}
+
+.workCard .workImg img{
+    width: 100%;
+    height: 50%;
+}
+
+#workSection #workAnimation{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 8fr;
+    gap: 2rem;
+    padding: 2rem;
+    grid-row: 3/4;
+    grid-column: 1/4;
+    background-color: #55214a;
+    border-radius: 2rem ;
+}
+
+#workSection #workAnimation .workVideo{
+    width: 100%;
+    grid-column: 1/4;
+    padding: 2rem;
+}
+
+#workSection #workAnimation .workVideo iframe{
+    width: 100%;
+    height: 30rem;
+    border-radius: 1rem;
+    /* padding: 1rem; */
+    border: 0.rem solid #f2f2f2;
+    /* background-color: #f2f2f2; */
+}
+
+
+/* Footer */
+footer{
+    background-color: #2a2b2c;
+}
+
+footer #footWrapper{
+    display: flex;
+    height: 30vh;
+    margin-top: 10vh;
+    padding-top: 5vh;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: #fff;
+}
+
+.footFirst{
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 2rem;
+}
+
+.footFirst h3{
+    font-size: 2.5rem;
+    padding-bottom: 1rem;
+    font-weight: 600;
+}
+
+.footFirst p{
+    font-size: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.footFirst a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footFirst p{
+    font-weight: 400;
+}
+
+.footLast{
+    font-family: 'Montserrat', sans-serif;
+    text-align: right;
+    font-size: 1.5rem;
+    padding-top: 2rem;
+}
+
+.footLast i{
+    font-size: 2rem;
+    padding: 2rem 0 2rem 2rem;
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px){
+
+   .container{
+    width : 1140px !important;
+   }
+    html{
+        font-size: 16px;
+    }
+
+} /* 1200 - 1400 */
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+    .container{
+        width : 960px !important;
+       }
+    html{
+        font-size: 16px;
+    }
+
+} /* 992 - 1199 */
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+
+    .container{
+        width : 720px !important;
+    }
+    html{
+        font-size: 14px;
+    }
+
+    #aboutWrapper .aboutPic{
+        width: 60% !important;
+    }
+
+    #workSection #workWrapper{
+        grid-template-columns: 1fr 1fr;
+    }
+    .workTitle:first-child{
+        grid-column: 1/3;
+        text-align: center;
+    }
+    #workSection #workWeb{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column: 1/4;
+    }
+    /* .workTitle:nth-child(2){
+        grid-column: 1/2;
+        text-align: center;
+    } */
+    #workSection #workGraphics{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 2rem;
+        grid-column: 1/4;
+    }
+    #workSection #workGraphics .workCard{
+        grid-row: 2/3 !important;
+    }
+    .workTitle:last-child{
+        grid-row: 3/4;
+        grid-column: 2/3;
+        text-align: center;
+    }
+    #workSection #workUi{
+        grid-template-columns: 1fr 1fr;
+        padding: 2rem;
+        grid-column: 1/4;
+        grid-row: 2/3;
+    }
+    #workSection #workAnimation{
+        grid-template-columns: 1fr 1fr;
+        grid-row: 4/5;
+    }
+
+} /* 768 - 1199 ---- Tab screens*/
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+
+    .container{
+        width : 460px !important;
+       }
+    html{
+        font-size: 12px;
+    }
+    #aboutSection #aboutWrapper{
+        justify-content: space-around !important;
+    }
+    #aboutWrapper .aboutContent{
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    }
+    #aboutWrapper .aboutPic{
+        width: 80% !important;
+        
+    }
+   
+}/* 480 - 767 ---- Mobile screens */
+
+@media screen and (min-width: 2000px){
+
+    html{
+        font-size: 20px;
+    }
+
+    #skillSection{
+        height: auto !important;
+    }
+
+    .sectionHead h2{
+        padding-top: 8vh;
+        padding-bottom: 1rem;
+    }
+
+} /* above 2000 ---- Larger screens */
+
+@media screen and (min-width: 768px){
+    #skillSection{
+        height: 100vh;
+    }
+}/* above 768 */
+
+
+@media screen and (max-width: 991px){
+
+    #aboutSection #aboutWrapper{
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    #aboutWrapper .aboutContent{
+        width: 100%;
+        order: 2;
+        padding-top: 2rem;
+        padding-bottom: 4rem;
+        text-align: center;
+        
+    }
+    #aboutWrapper .aboutPic{
+        padding-top: 2rem;
+        width: 80%;
+        order: 1;
+    }
+
+    /* skillSection */
+    .skill{
+        display: block;
+    }
+    .skillName{
+        width:100%
+    }
+    .skillBar{
+        width: 100%;
+    }
+    #skillWrapper .skillMain .skillHead{
+        text-align: left;
+        padding-left: 0 !important;
+    }
+
+} 
+/* under 992 */
+
+@media screen and (max-width: 767px){
+
+    #navSection .navbar{
+        display: none;
+    }
+
+    /* skillSection */
+    #skillSection #skillWrapper{
+        flex-direction: column;
+    }
+    #skillWrapper .skillMain{
+        width: 100%;
+    }
+
+
+    #eduSection #eduWrapper{
+        display: block;
+    }
+    .eduHead, .eduRow{
+        display: none;
+    }
+    #eduWrapper .eduName p{
+        font-size: 1rem !important;
+        font-weight: 500 !important;
+    }
+    #eduWrapper .eduYear p{
+        font-size: 1rem !important;
+    }
+
+
+    #workSection #workWrapper{
+        grid-template-columns: 1fr;
+    }
+    .workTitle:first-child{
+        grid-column: 1/2;
+        text-align: center;
+    }
+    #workSection #workWeb{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column: 1/2;
+    }
+    .workTitle:nth-child(2){
+        grid-row: 3/4;
+        text-align: center;
+    }
+    
+    #workSection #workGraphics{
+        display: grid;
+        padding: 2rem;
+        grid-template-columns: 1fr;
+        grid-column: 1/2;
+    }
+    #workSection #workGraphics .workCard{
+        grid-column: 1/4;
+    }
+    .workTitle:last-child{
+        grid-column: 1/2;
+        text-align: center;
+    }
+    #workSection #workUi{
+        padding: 2rem;
+        grid-template-columns: 1fr;
+        grid-column: 1/2;
+    }
+    #workSection #workAnimation{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .workCard h3{
+        font-size: 2rem;
+        text-align: left;
+        padding: 2rem 2rem 0.5rem 2rem;
+    }
+    .workCard .workTag{
+        flex-direction: column;
+    }
+    .workCard .workTag p:first-child{
+        font-size: 1.5rem;
+    }
+    .workCard .workTag p{
+        padding: 0 1rem 1rem 1rem;
+    }
+    #workSection #workAnimation{
+        grid-row: 4/5;
+        grid-column: 1/2;
+    }
+    #workSection #workAnimation .workVideo{
+        width: 100%;
+        grid-column: 1/4;
+        padding: 2rem;
+    }
+
+
+    footer #footWrapper{
+        display: block;
+        text-align: center;
+        padding-top: 5vh;
+    }
+    .footLast{
+        text-align: center;
+    }
+    .footLast i{
+        padding: 1rem;
+    }
+    
+
+} /* under 768 */
+
+@media screen and (max-width: 479px){
+
+    html{
+        font-size: 10px;
+    }
+
+} /* under 480 */
+
