@@ -364,6 +364,7 @@ body{
 /* Education Section */
 #eduSection{
     background-color: #fff7f1 ;
+    height : 100vh;
     padding-top: 3vh;
     padding-bottom: 8vh;
     margin-top: 20vh;
