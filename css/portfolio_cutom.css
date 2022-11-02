@@ -256,7 +256,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-shrink: 0;
-    min-height: 0;
+    min-height: 100vh;
 }
 
 #skillWrapper .skillMain{
