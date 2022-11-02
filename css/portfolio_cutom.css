@@ -247,8 +247,8 @@ body{
 /* Skills Section */
 #skillSection{
     display: block;
-    padding-top: 1.5rem;
-    padding-bottom: 4rem;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
     min-height: 100vh;
 }
 
