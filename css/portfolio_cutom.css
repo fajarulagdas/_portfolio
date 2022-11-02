@@ -255,6 +255,7 @@ body{
 #skillSection #skillWrapper{
     display: flex;
     justify-content: space-around;
+    flex-shrink: 0;
     
 }
 
@@ -306,6 +307,7 @@ body{
 .skillBar{
     width: 40%;
     display: flex;
+    flex: 1;
     padding-top: 1rem;
     padding-bottom: 1rem;
 }
@@ -363,8 +365,7 @@ body{
 
 /* Education Section */
 #eduSection{
-    background-color: #fff7f1 ;
-    height : 100vh;
+    background-color: #fff7f1;
     padding-top: 3vh;
     padding-bottom: 8vh;
     margin-top: 70vh;
