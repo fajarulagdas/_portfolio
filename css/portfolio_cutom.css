@@ -262,6 +262,7 @@ body{
 #skillWrapper .skillMain{
     width: 40%;
     padding-bottom: 10vh;
+    align-self: stretch;
 }
 
 #skillWrapper .skillMain .skillHead{
