@@ -246,6 +246,7 @@ body{
 
 /* Skills Section */
 #skillSection{
+    display: block;
     padding-top: 1.5rem;
     padding-bottom: 4rem;
     height: auto;
